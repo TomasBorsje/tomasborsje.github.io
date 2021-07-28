@@ -1,2 +1,2 @@
 ## [tomasborsje.github.io](https://tomasborsje.github.io)
-Test website created to learn about HTML, CSS, and JavaScript. Currently displays info about my Minecraft mod, WingTech.
+Personal website built using HTML and CSS.
