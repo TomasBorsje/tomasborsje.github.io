@@ -1,35 +1,74 @@
 html {
-	background-color: gray;
-	font-size: 10px;
+    background-color: #FFFFFF;
+    font-size: 10px;
     font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-size: 60px;
-  text-align: center;
-  margin: 0;
-  padding: 20px 0;
-  font-family: "Chakra Petch", sans-serif;
-  color: #FFFFFF;
-  text-shadow: 3px 3px 1px black;
-}
-
-p, li {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-}
-
 body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #FF9500;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  width: 600px;
+footer.page-footer {
+    background-color: rebeccapurple;
+    color: azure;
+    font-size: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    text-shadow: 2px 2px 1px black;
+    text-align: left;
+    padding: 1.5%;
+    margin: 0;
+    border: 5px hidden black;
+    border-top-style: solid;
+}
+
+header.page-header {
+    background-color: rebeccapurple;
+    color: azure;
+    font-size: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    text-shadow: 3px 3px 1px black;
+    text-align: left;
+    padding: 1% 2% 1% 2%;
+    margin: 0;
+    border: 5px hidden black;
+    border-bottom-style: solid;
+}
+
+.projects-header{
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem "Roboto", sans-serif;
+}
+
+.project {
+    background: right/contain content-box border-box no-repeat
+                white;
+}
+
+.project {
+    margin: 1%;
+    padding: 1%;
+    font-size: 35px;
+    font-family: "Chakra Petch", sans-serif;
+    image-rendering: crisp-edges;
+}
+
+.projects-header > h1 {
+    margin: 1%;
+    padding: .6%;
+    font-size: 35px;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.project > p {
+    margin: .4rem;
+    font-size: 2rem;
+}
+
+.project > h2 {
+    margin: .4rem;
+    font-size: 3rem;
 }
