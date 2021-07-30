@@ -1,2 +1,2 @@
 ## [tomasborsje.github.io](https://tomasborsje.github.io)
-Personal website built using HTML and CSS.
+Personal website built from scratch using HTML and CSS.
