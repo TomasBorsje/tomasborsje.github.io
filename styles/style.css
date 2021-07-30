@@ -43,6 +43,13 @@ header.page-header {
     font: 1rem "Roboto", sans-serif;
 }
 
+.projects-header > h1 {
+    margin: 1%;
+    padding: .6%;
+    font-size: 35px;
+    font-family: "Chakra Petch", sans-serif;
+}
+
 .project {
     background: right/contain content-box border-box no-repeat
                 white;
@@ -54,18 +61,14 @@ header.page-header {
     font-size: 35px;
     font-family: "Chakra Petch", sans-serif;
     image-rendering: crisp-edges;
-}
-
-.projects-header > h1 {
-    margin: 1%;
-    padding: .6%;
-    font-size: 35px;
-    font-family: "Chakra Petch", sans-serif;
+    border: 5px solid black;
+    background-size: 5em;
 }
 
 .project > p {
     margin: .4rem;
     font-size: 2rem;
+    width: 60%;
 }
 
 .project > h2 {
