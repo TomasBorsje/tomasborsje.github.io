@@ -8,10 +8,12 @@ body {
     width: auto;
     margin: 0 auto;
     padding: 0;
+    background-color: #eee;
 }
 
 footer.page-footer {
     background-color: rebeccapurple;
+    background-image: linear-gradient(#864ac2, rebeccapurple);
     color: azure;
     font-size: 20px;
     font-family: "Chakra Petch", sans-serif;
@@ -25,6 +27,7 @@ footer.page-footer {
 
 header.page-header {
     background-color: rebeccapurple;
+    background-image: linear-gradient(#864ac2, rebeccapurple);
     color: azure;
     font-size: 20px;
     font-family: "Chakra Petch", sans-serif;
@@ -36,7 +39,36 @@ header.page-header {
     border-bottom-style: solid;
 }
 
-.projects-header{
+.about-container {
+    margin: 2% 0 0 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.about-header {
+    font-size: 20px;
+    border: 5px black;
+    border-style: solid none;
+    color: azure;
+    background-color: rebeccapurple;
+    background-image: linear-gradient(#a664e8, rebeccapurple);
+    text-shadow: 3px 3px 1px black;
+}
+
+.about-body {
+    background-color: white;
+    border: 5px black;
+    border-style: none none solid none;
+}
+
+.about-body > p {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 1% 0;
+}
+
+.projects-header {
     margin: 0;
     padding: .3rem;
     background-color: #eee;
