@@ -50,9 +50,11 @@ header.page-header {
     font-family: "Chakra Petch", sans-serif;
 }
 
-.project {
-    background: right/contain content-box border-box no-repeat
-                white;
+.projects-header > h2 {
+    margin: 1%;
+    padding: .6%;
+    font-size: 30px;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 .page-header > h1 > a > img {
@@ -62,6 +64,37 @@ header.page-header {
     vertical-align: center;
 }
 
+.project-grid-container {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: calc((1% + 6px) / 2);
+    margin-top: 0;
+    padding: 0 0 1% 0;
+}
+
+.project-grid-item {
+    font-size: 3rem;
+    padding: calc((1% + 6px) / 2);
+    padding-top: 0;
+    margin: 1%;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: white;
+    border: 5px solid black;
+}
+
+.project-grid-item > p {
+    margin: 1rem;
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+}
+
+.project-grid-item > h2 {
+    margin: 1rem;
+    font-size: 3rem;
+}
+
 .project {
     margin: 1%;
     padding: 1%;
@@ -69,6 +102,8 @@ header.page-header {
     font-family: "Chakra Petch", sans-serif;
     image-rendering: crisp-edges;
     border: 5px solid black;
+    background: right/contain content-box border-box no-repeat
+    white;
     background-size: 5em;
 }
 
