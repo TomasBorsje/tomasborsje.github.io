@@ -1,0 +1,9 @@
+#options {
+    display:block;
+    float:left;
+}
+
+#table, table, tr, td {
+    border: solid 1px grey;
+    border-collapse: collapse;
+}
