@@ -95,7 +95,7 @@ Number.prototype.round = function(places) {
 // Script
 let bazaarData = null;
 
-let movingRatio = 0.5
+let movingRatio = 0.25
 let minBuyPrice = 100
 let maxBuyPrice = 2000000
 let minSellPrice = 100

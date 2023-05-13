@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="options">
-    <label for="ratioSlider" id="ratioLabel">Profit Per Unit Ratio: 0.50</label><input id="ratioSlider" type="range" min="0" max="1" step="0.01" value="0.5">
+    <label for="ratioSlider" id="ratioLabel">Profit Per Unit Ratio: 0.25</label><input id="ratioSlider" type="range" min="0" max="1" step="0.01" value="0.25">
     <p>This ratio determines how much to weigh potential profit per week vs per transaction.</p>
     <p>0 = Prioritise max profit per unit. (Expensive, slower to sell items).</p>
     <p>1 = Prioritise max profit per week. (Cheaper, faster selling items to flip in bulk).</p>
@@ -30,6 +30,7 @@
 <p>Sell Price - Insta-Sell price of the item. This would be your buy offer price.</p>
 <p>Profit Per Unit - Coins earned from buying and selling 1 item (flipping).</p>
 <p>Sell Rate - An arbitrary score value used to compare how fast items will sell when you put up a sell offer.</p>
+<p>This data is live; refreshed every time you refresh the page.</p>
 <script src="BazaarFlip.js"></script>
 </body>
 </html>
