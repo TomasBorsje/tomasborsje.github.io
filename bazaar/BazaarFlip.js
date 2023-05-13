@@ -2,6 +2,7 @@ const ratioSlider = document.getElementById('ratioSlider');
 const hideEnchantCheckbox = document.getElementById('hideEnchants')
 const outputDisplay = document.getElementById('outputDisplay')
 const loadingMessage = document.getElementById('loadingMessage')
+const ratioLabel = document.getElementById('ratioLabel')
 
 const minBuyInput = document.getElementById("minBuy")
 const maxBuyInput = document.getElementById("maxBuy")
@@ -116,6 +117,7 @@ if (document.readyState !== 'loading') {
 ratioSlider.onchange = function () {
     // Re-Render
     movingRatio = ratioSlider.value
+    ratioLabel.innerHTML = "Profit Per Unit Ratio: "+parseFloat(movingRatio).toFixed(2)
     RenderOutput()
 }
 
