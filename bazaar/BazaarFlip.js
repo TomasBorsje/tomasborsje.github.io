@@ -119,7 +119,7 @@ if (document.readyState !== 'loading') {
 ratioSlider.onchange = function () {
     // Re-Render
     movingRatio = ratioSlider.value
-    ratioLabel.innerHTML = "Profit Per Unit Ratio: "+parseFloat(movingRatio).toFixed(2)
+    ratioLabel.innerHTML = "Profit To Demand Ratio: "+parseFloat(movingRatio).toFixed(2)
     RenderOutput()
 }
 
