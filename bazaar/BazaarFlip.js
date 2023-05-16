@@ -192,18 +192,18 @@ function RenderOutput() {
 
 function GetItemSellRateString(sellRate) {
     if(sellRate < 1) {
-        return " (Very Slow)"
+        return " (Very Low)"
     }
     if(sellRate < 30) {
-        return " (Slow)"
+        return " (Low)"
     }
     if(sellRate < 300) {
-        return " (Average)"
+        return " (Medium)"
     }
     if(sellRate < 4000) {
-        return " (Fast)"
+        return " (High)"
     }
-    return " (Very Fast)"
+    return " (Very High)"
 }
 
 function GetItemSellRateColor(sellRate) {
