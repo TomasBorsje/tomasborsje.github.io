@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <title>Bazaar Flipper</title>
     <link rel="icon" href="https://static.wikia.nocookie.net/hypixel-skyblock/images/f/f0/Coins.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
     <meta name="description" content="Discover the best Hypixel Skyblock bazaar flips for maximum profit.">
     <meta name="keywords" content="bazaar flip hypixel skyblock profit calculator">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="options">
+<div class="TopBar">
+    <p id="title">Bazaar Flipper</p>
     <label for="ratioSlider" id="ratioLabel">Profit Per Unit Ratio: 0.25</label><input id="ratioSlider" type="range" min="0" max="1" step="0.01" value="0.25">
-    <p>This ratio determines how much to weigh potential profit per week vs per transaction.</p>
-    <p>0 = Prioritise max profit per unit. (Expensive, slower to sell items).</p>
-    <p>1 = Prioritise max profit per week. (Cheaper, faster selling items to flip in bulk).</p>
-    <label for="hideEnchants">Hide Enchantments</label><input type="checkbox" id="hideEnchants" checked>
-    <label for="minBuy">Minimum Buy Price</label><input type="number" id="minBuy" min="0" max="99999999999999" value="100">
-    <label for="maxBuy">Maximum Buy Price</label><input type="number" id="maxBuy" min="0" max="99999999999999" value="2000000">
-    <label for="minSell">Minimum Sell Price</label><input type="number" id="minSell" min="0" max="99999999999999" value="100">
-    <label for="maxSell">Maximum Sell Price</label><input type="number" id="maxSell" min="0" max="99999999999999" value="1000000000">
+    <p id="ratioInfo">Slow, High Profit <---------> Fast, Low Profit</p>
 </div>
-<p id="loadingMessage">Loading data from Hypixel API...</p>
-<hr>
+<div id="ItemDisplayHolder" class="ItemDisplayHolder">
+    <div id="originalItemDisplay" class="itemDisplay" >
+        <div class="itemDisplayHeader">
+            <div class="imageItemContainer">
+                <img class="itemImageDisplay" src="images/furf/PURE_MITHRIL.png" onerror="this.src='images/furf/question.png'">
+            </div>
+            <p class="itemDisplayName">Pure Mithril</p>
+        </div>
+        <div class="itemInfoHolder">
+            <div class="itemInfoRowHolder">
+                <p class="itemLabel">Buy offer: &nbsp;</p>
+                <p class="itemValue">2000</p>
+            </div>
+            <div class="itemInfoRowHolder">
+                <p class="itemLabel">Sell offer: &nbsp;</p>
+                <p class="itemValue">3500</p>
+            </div>
+            <div class="itemInfoRowHolder">
+                <p class="itemLabel">Profit: &nbsp;</p>
+                <p class="itemValue">1500</p>
+            </div>
+            <div class="itemInfoRowHolder">
+                <p class="itemLabel">Sell Rate: &nbsp;</p>
+                <p class="itemValue">10</p>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="outputDisplay"></div>
-<hr>
-<p>Score - Arbitrary score value representing profitability per item based on your criteria.</p>
-<p>Name - The item's name.</p>
-<p>Buy Price - Insta-Buy price of the item. This would be your sell offer price.</p>
-<p>Sell Price - Insta-Sell price of the item. This would be your buy offer price.</p>
-<p>Profit Per Unit - Coins earned from buying and selling 1 item (flipping).</p>
-<p>Sell Rate - An arbitrary score value used to compare how fast items will sell when you put up a sell offer.</p>
-<p>This data is live; refreshed every time you refresh the page.</p>
 <script src="BazaarFlip.js"></script>
 </body>
 </html>

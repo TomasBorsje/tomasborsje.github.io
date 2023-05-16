@@ -1,13 +1,6 @@
 const ratioSlider = document.getElementById('ratioSlider');
-const hideEnchantCheckbox = document.getElementById('hideEnchants')
 const outputDisplay = document.getElementById('outputDisplay')
-const loadingMessage = document.getElementById('loadingMessage')
 const ratioLabel = document.getElementById('ratioLabel')
-
-const minBuyInput = document.getElementById("minBuy")
-const maxBuyInput = document.getElementById("maxBuy")
-const minSellInput = document.getElementById("minSell")
-const maxSellInput = document.getElementById("maxSell")
 
 // Prio queue
 const topN = 0;
@@ -92,6 +85,15 @@ Number.prototype.round = function(places) {
     return +(Math.round(this + "e+" + places)  + "e-" + places);
 }
 
+function titleCase(str) {
+    str = str.toLowerCase();
+    str = str.split(' ');
+    for (var i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    return str.join(' '); // ["I'm", "A", "Little", "Tea", "Pot"].join(' ') => "I'm A Little Tea Pot"
+}
+
 // Script
 let bazaarData = null;
 
@@ -100,7 +102,7 @@ let minBuyPrice = 100
 let maxBuyPrice = 2000000
 let minSellPrice = 100
 let maxSellPrice = 99999999999999
-let numProducts = 20
+let numProducts = 48
 let allowEnchantments = false
 
 let calculatedProducts;
@@ -121,35 +123,7 @@ ratioSlider.onchange = function () {
     RenderOutput()
 }
 
-hideEnchantCheckbox.onchange = function() {
-    // Re-Render
-    allowEnchantments = !hideEnchantCheckbox.checked
-    RenderOutput()
-}
-
-minSellInput.onchange = function() {
-    // Re-Render
-    minSellPrice = minSellInput.value;
-    RenderOutput()
-}
-maxSellInput.onchange = function() {
-    // Re-Render
-    maxSellPrice = maxSellInput.value;
-    RenderOutput()
-}
-minBuyInput.onchange = function() {
-    // Re-Render
-    minBuyPrice = minBuyInput.value;
-    RenderOutput()
-}
-maxBuyInput.onchange = function() {
-    // Re-Render
-    maxBuyPrice = maxBuyInput.value;
-    RenderOutput()
-}
-
 function RenderOutput() {
-    loadingMessage.innerHTML = ""
     outputDisplay.replaceChildren()
     calculatedProducts = new PriorityQueue((a, b) => a[0] > b[0]);
 
@@ -179,45 +153,12 @@ function RenderOutput() {
         }
     });
 
-    // Get a reference to the outputDisplay table element
-    const outputTable = document.getElementById('outputDisplay');
 
-    // Create the table element
-    const table = document.createElement('table');
+    const displayHolder = document.getElementById("ItemDisplayHolder")
+    const originalNode = document.getElementById("originalItemDisplay")
 
-    // Create the header row
-    const headerRow = document.createElement('tr');
-
-    // Loop through the first row of data to create the header cells
-    for (let i = 0; i < 6; i++) {
-        const headerCell = document.createElement('th');
-        switch (i) {
-            case 0:
-                headerCell.textContent = "Score";
-                break;
-            case 1:
-                headerCell.textContent = "Name";
-                break;
-            case 2:
-                headerCell.textContent = "Buy Price";
-                break;
-            case 3:
-                headerCell.textContent = "Sell Price";
-                break;
-            case 4:
-                headerCell.textContent = "Profit Per Unit";
-                break;
-            case 5:
-                headerCell.textContent = "Sell Rate"
-                break;
-        }
-        headerRow.appendChild(headerCell);
-    }
-
-    // Append the header row to the table
-    table.appendChild(headerRow);
-
-    // Loop through the rest of the data to create rows and cells
+    displayHolder.replaceChildren()
+    // Loop through the rest of the data to populate grid
     for (let i = 0; i < numProducts; i++) {
         const row = document.createElement('tr');
         const product = calculatedProducts.pop()
@@ -226,19 +167,94 @@ function RenderOutput() {
             cell.textContent = product[j].toLocaleString();
             row.appendChild(cell);
         }
+        const itemImage = GetItemImage(product[1]);
+        const rowNum = Math.floor(i/3)
 
-        table.appendChild(row);
+        const copiedNode = originalNode.cloneNode(true)
+
+        copiedNode.style.gridRow = rowNum
+
+        copiedNode.querySelector(".itemDisplayName").innerHTML = titleCase(product[1].replace(/_/g, " "))
+
+        let itemValues = copiedNode.querySelectorAll(".itemValue")
+        itemValues[0].innerHTML = product[3].toLocaleString()
+        itemValues[1].innerHTML = product[2].toLocaleString()
+        itemValues[2].innerHTML = product[4].toLocaleString()
+        itemValues[3].innerHTML = product[5].toFixed(1) + GetItemSellRateString(product[5])
+        itemValues[3].style.color = GetItemSellRateColor(product[5])
+
+        copiedNode.querySelector(".itemImageDisplay").src = itemImage.src;
+
+        displayHolder.appendChild(copiedNode)
+
     }
+}
 
-    // Append the table to the outputDisplay table element
-    outputTable.appendChild(table);
+function GetItemSellRateString(sellRate) {
+    if(sellRate < 1) {
+        return " (Very Slow)"
+    }
+    if(sellRate < 30) {
+        return " (Slow)"
+    }
+    if(sellRate < 300) {
+        return " (Average)"
+    }
+    if(sellRate < 4000) {
+        return " (Fast)"
+    }
+    return " (Very Fast)"
+}
 
+function GetItemSellRateColor(sellRate) {
+    if(sellRate < 1) {
+        return "#ff2121"
+    }
+    if(sellRate < 30) {
+        return "#fd6868"
+    }
+    if(sellRate < 300) {
+        return "#c9c9c9"
+    }
+    if(sellRate < 4000) {
+        return "#97ff5b"
+    }
+    return "#49ff00"
+}
+
+function checkIfImageExists(url, callback) {
+    const img = new Image();
+    img.src = url;
+
+    if (img.complete) {
+        callback(true);
+    } else {
+        img.onload = () => {
+            callback(true);
+        };
+
+        img.onerror = () => {
+            callback(false);
+        };
+    }
+}
+
+function GetItemImage(itemName) {
+    let imageName = itemName
+    if(imageName.startsWith("ENCHANTED_")) {
+        imageName = imageName.substring(10)
+    }
+    let image = new Image();
+    image.onerror = function() {
+        image.src = "./images/furf/question.png"
+    }
+    image.src = "./images/furf/"+imageName+".png"
+    return image
 }
 
 async function InitData() {
     const response = await fetch('https://api.hypixel.net/skyblock/bazaar');
     bazaarData = await response.json();
-    console.log(bazaarData)
     RenderOutput();
 }
 

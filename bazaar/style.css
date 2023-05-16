@@ -3,7 +3,132 @@
     float:left;
 }
 
+body {
+    margin: 0
+}
+
 #table, table, tr, td {
     border: solid 1px grey;
     border-collapse: collapse;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align:center;
+    padding-top:10px;
+    color: white;
+    margin: 0;
+    font-size: 48px;
+}
+
+#ratioLabel {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    margin: 0 45%;
+    width: fit-content;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#ratioInfo {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    margin: 0 42%;
+    width: fit-content;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#ratioSlider {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    margin: 0 45%;
+    width: fit-content;
+}
+
+.TopBar {
+    background-color: #5c34a6;
+    border-bottom: solid 3px #3d008c;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+}
+
+.ItemDisplayHolder {
+    display: grid;
+    gap: 30px;
+    column-count: 3;
+    padding: 25px 10% 0px 10%;
+    align-items: center;
+    justify-items: center;
+    background-color: #6849a3;
+    margin: 0
+
+}
+
+.itemDisplay {
+    border: solid 3px #3d008c;
+    background-color: #5e00d9;
+    padding: 16px;
+    border-radius: 16px;
+    width: 400px;
+    height:200px;
+}
+
+.itemImageDisplay {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    object-position: 100% 0;
+    padding: 0;
+    margin: 0;
+    image-rendering: pixelated;
+}
+
+.imageItemContainer {
+    padding: 4px;
+    background-color: transparent;
+    border-radius: 4px;
+    margin: 0px;
+}
+
+.itemDisplayHeader {
+    display: flex;
+    align-items: center;
+}
+
+.itemInfoRowHolder {
+    display: flex;
+    align-items: center;
+    max-height: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.itemDisplayName {
+    padding: 0 16px 0 16px;
+    vertical-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+.itemLabel {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+.itemValue {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: gold;
+    font-size: 24px;
 }
