@@ -1,6 +1,7 @@
 const ratioSlider = document.getElementById('ratioSlider');
 const outputDisplay = document.getElementById('outputDisplay')
 const ratioLabel = document.getElementById('ratioLabel')
+const npcCheckbox = document.getElementById("npcSellMode")
 
 // Prio queue
 const topN = 0;
@@ -96,6 +97,7 @@ function titleCase(str) {
 
 // Script
 let bazaarData = null;
+let itemData = null;
 
 let movingRatio = 0.25
 let minBuyPrice = 100
@@ -104,6 +106,7 @@ let minSellPrice = 100
 let maxSellPrice = 99999999999999
 let numProducts = 48
 let allowEnchantments = false
+let useSellToNPC = false
 
 let calculatedProducts;
 
@@ -123,6 +126,16 @@ ratioSlider.onchange = function () {
     RenderOutput()
 }
 
+npcCheckbox.onchange = function () {
+    useSellToNPC = npcCheckbox.checked;
+    if(useSellToNPC) {
+        movingRatio = 0;
+        ratioSlider.value = 0;
+        ratioLabel.innerHTML = "Profit To Demand Ratio: 0"
+            }
+    RenderOutput();
+}
+
 function RenderOutput() {
     outputDisplay.replaceChildren()
     calculatedProducts = new PriorityQueue((a, b) => a[0] > b[0]);
@@ -133,23 +146,41 @@ function RenderOutput() {
         const product = bazaarData.products[product_name];
         const summary = product.quick_status;
 
-        if (summary.buyPrice === 0 && summary.sellPrice === 0) {
+        if (summary.buyPrice === 0 || summary.sellPrice === 0) {
             return;
         }
         if (product.product_id.includes("ENCHANTMENT") && !allowEnchantments) {
             return;
         }
 
-        // Valid product
-        const price_diff = summary.buyPrice - summary.sellPrice;
-        const sell_rate = summary.buyMovingWeek / summary.buyPrice
+        if(useSellToNPC) {
+            // Calculate value per sell
+            const productMetadata = GetItemData(product.product_id);
+            if(productMetadata === undefined) {return;}
 
-        if (summary.buyPrice > minBuyPrice && summary.buyPrice < maxBuyPrice
-            && summary.sellPrice > minSellPrice && summary.sellPrice < maxSellPrice) {
+            let npcSellPrice = 0;
+            if(productMetadata.npc_sell_price !== undefined) {
+                npcSellPrice = productMetadata['npc_sell_price']
+            }
 
-            const score = price_diff * (1 - movingRatio) + price_diff * sell_rate * movingRatio;
-            const productInfo = [Math.round(score), product.product_id, summary.buyPrice.round(1), summary.sellPrice.round(1), price_diff.round(2),Math.sqrt(sell_rate * 1000)];
+            const sellToNPCProfit = npcSellPrice - summary.sellPrice;
+            const sellToMeRate = summary.sellMovingWeek / summary.sellPrice
+            const score = sellToNPCProfit * (1 - movingRatio) + sellToNPCProfit * sellToMeRate * movingRatio;
+            const productInfo = [Math.round(score), product.product_id, summary.sellPrice.round(1), npcSellPrice.round(1), sellToNPCProfit.round(2),Math.sqrt(sellToMeRate * 1000)];
             calculatedProducts.push(productInfo);
+        }
+        else {
+            // Valid product
+            const price_diff = summary.buyPrice - summary.sellPrice;
+            const sell_rate = summary.buyMovingWeek / summary.buyPrice
+
+            if (summary.buyPrice > minBuyPrice && summary.buyPrice < maxBuyPrice
+                && summary.sellPrice > minSellPrice && summary.sellPrice < maxSellPrice) {
+
+                const score = price_diff * (1 - movingRatio) + price_diff * sell_rate * movingRatio;
+                const productInfo = [Math.round(score), product.product_id, summary.buyPrice.round(1), summary.sellPrice.round(1), price_diff.round(2),Math.sqrt(sell_rate * 1000)];
+                calculatedProducts.push(productInfo);
+            }
         }
     });
 
@@ -175,6 +206,16 @@ function RenderOutput() {
         copiedNode.style.gridRow = rowNum
 
         copiedNode.querySelector(".itemDisplayName").innerHTML = titleCase(product[1].replace(/_/g, " "))
+
+        let itemLabels = copiedNode.querySelectorAll(".itemLabel")
+        if(useSellToNPC) {
+            itemLabels[0].innerHTML = "NPC Sell Price:&nbsp;"
+            itemLabels[1].innerHTML = "Bazaar Buy Offer:&nbsp;"
+        }
+        else {
+            itemLabels[0].innerHTML = "Buy Offer:&nbsp;"
+            itemLabels[1].innerHTML = "Sell Offer:&nbsp;"
+        }
 
         let itemValues = copiedNode.querySelectorAll(".itemValue")
         itemValues[0].innerHTML = product[3].toLocaleString()
@@ -252,9 +293,22 @@ function GetItemImage(itemName) {
     return image
 }
 
+function GetItemData(itemId) {
+    for(const itemNum in itemData.items) {
+        const thisItemData = itemData.items[itemNum]
+        if(thisItemData.id === itemId) {
+            return thisItemData;
+        }
+    }
+}
+
 async function InitData() {
     const response = await fetch('https://api.hypixel.net/skyblock/bazaar');
     bazaarData = await response.json();
+    const itemResponse = await(fetch('https://api.hypixel.net/resources/skyblock/items'))
+    itemData = await itemResponse.json();
+    ratioSlider.value = movingRatio;
+    npcCheckbox.checked = false;
     RenderOutput();
 }
 

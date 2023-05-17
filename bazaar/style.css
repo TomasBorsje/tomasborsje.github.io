@@ -22,6 +22,10 @@ body {
     font-size: 48px;
 }
 
+#npcSellModeLabel {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
 #ratioLabel {
     display: flex;
     justify-self: center;
