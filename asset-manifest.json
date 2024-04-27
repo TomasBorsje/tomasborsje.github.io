@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.ba0ac1cd.css",
-    "main.js": "/static/js/main.d90ab5b6.js",
+    "main.js": "/static/js/main.7ac12d89.js",
     "static/js/453.5eb9b7d1.chunk.js": "/static/js/453.5eb9b7d1.chunk.js",
     "static/media/rainworldle-background.png": "/static/media/rainworldle-background.554b5dcd641312160c94.png",
     "static/media/Rodondo.otf": "/static/media/Rodondo.e0a3763da5601d245c5d.otf",
     "index.html": "/index.html",
     "main.ba0ac1cd.css.map": "/static/css/main.ba0ac1cd.css.map",
-    "main.d90ab5b6.js.map": "/static/js/main.d90ab5b6.js.map",
+    "main.7ac12d89.js.map": "/static/js/main.7ac12d89.js.map",
     "453.5eb9b7d1.chunk.js.map": "/static/js/453.5eb9b7d1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba0ac1cd.css",
-    "static/js/main.d90ab5b6.js"
+    "static/js/main.7ac12d89.js"
   ]
 }
