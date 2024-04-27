@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Rodondo';
+  src: url('Rodondo.otf') format('opentype'); /* OTF format */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.GuessHeaderRow {
+  display: flex;
+  font-size: 0.9vw;
+  font-family: 'Rodondo', sans-serif;
+  text-wrap: normal;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid white;
+}
+
+.GuessRow {
+  display: flex;
+  margin: 5px 0;
+  padding: 10px 0;
+}
+
+.GuessColumnHeader {
+  width: 9vh;
+  height: 1vh;
+  display: flex;
+  justify-content: center;
+  border: 1px solid transparent;
+  align-items: center;
+  font-size: 0.9vw;
+  font-family: 'Rodondo', sans-serif;
+  text-wrap: normal;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.CorrectPropertyDisplayBox, .WrongPropertyDisplayBox, .PartialPropertyDisplayBox {
+  width: 9vh;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  font-size: 0.9vw;
+  font-family: 'Rodondo', sans-serif;
+  text-wrap: normal;
+  margin: 0 5px;
+  padding: 5px;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.GuessIconDisplayBox {
+  width: 9vh;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  font-size: 0.9vw;
+  font-family: 'Rodondo', sans-serif;
+  text-wrap: normal;
+  margin: 0 5px;
+  padding: 5px;
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  background-color: gray;
+}
+
+.GuessIcon {
+  object-fit: contain;
+  height: 80%;
+  width: 80%;
+  image-rendering: pixelated;
+}
+
+.CorrectPropertyDisplayBox {
+  background-color: limegreen;
+}
+.WrongPropertyDisplayBox {
+  background-color: darkred;
+}
+.PartialPropertyDisplayBox {
+  background-color: #ffa600;
+}
+
+.RainWorldleApp {
+  text-align: center;
+}
+
+.Rainworldle-Title {
+  color: white;
+  font-family: 'Rodondo', sans-serif;
+  font-size: 80px;
+  margin-top: 2vh;
+  text-shadow: 0 0 32px black; /* horizontal offset, vertical offset, blur radius, shadow color */
+}
+
+.RainWorldleApp::before {
+  content: "";
+  background-image: url("../../public/images/rainworldle/rainworldle-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  z-index: -1; /* Ensure it's behind the content */
+}
+
+.Rainworldle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.guess-dropdown-textbox {
+  position: relative;
+}
+
+.InputGuessTextbox {
+  width: 30vh; /* Adjust the width as needed */
+  margin: 4vh;
+  height: 4vh;
+  font-family: 'Rodondo', sans-serif;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.ShareStatsButton {
+  width: 30vh; /* Adjust the width as needed */
+  margin: 4vh;
+  height: 4vh;
+  font-size: 20px;
+}
+
+.options-list {
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 100%; /* Set a fixed width for the dropdown options */
+  max-height: 40vh;
+  overflow-y: auto;
+  color: black;
+}
+
+li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #f0f0f0;
+}

@@ -1,0 +1,695 @@
+[
+    {
+        "name": "Survivor",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "15",
+        "game_version": "Vanilla",
+        "colours": "White"
+    },
+    {
+        "name": "Monk",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "15",
+        "game_version": "Vanilla",
+        "colours": "Yellow"
+    },
+    {
+        "name": "Hunter",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "15",
+        "game_version": "Vanilla",
+        "colours": "Red"
+    },
+    {
+        "name": "Nightcat",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "0",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Gourmand",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "15",
+        "game_version": "Downpour",
+        "colours": "Tan"
+    },
+    {
+        "name": "Artificer",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "14",
+        "game_version": "Downpour",
+        "colours": "Red"
+    },
+    {
+        "name": "Rivulet",
+        "species": "Mammal, Aquatic",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "14",
+        "game_version": "Downpour",
+        "colours": "Blue"
+    },
+    {
+        "name": "Spearmaster",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "14",
+        "game_version": "Downpour",
+        "colours": "Purple"
+    },
+    {
+        "name": "Saint",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "14",
+        "game_version": "Downpour",
+        "colours": "Green"
+    },
+    {
+        "name": "Inv, Enot, ???",
+        "species": "Mammal",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "14",
+        "game_version": "Downpour",
+        "colours": "Blue"
+    },
+    {
+        "name": "Green Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "8",
+        "behaviour": "Aggressive",
+        "native_region_count": "6",
+        "game_version": "Vanilla",
+        "colours": "Black, Green"
+    },
+    {
+        "name": "Pink Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "6",
+        "behaviour": "Aggressive",
+        "native_region_count": "10",
+        "game_version": "Vanilla",
+        "colours": "Black, Pink"
+    },
+    {
+        "name": "Blue Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "5",
+        "behaviour": "Aggressive",
+        "native_region_count": "13",
+        "game_version": "Vanilla",
+        "colours": "Black, Blue"
+    },
+    {
+        "name": "White Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "6",
+        "behaviour": "Aggressive",
+        "native_region_count": "15",
+        "game_version": "Vanilla",
+        "colours": "White, Variable"
+    },
+    {
+        "name": "Salamander",
+        "species": "Aquatic, Reptile",
+        "hunter_food_pips": "6",
+        "behaviour": "Aggressive",
+        "native_region_count": "5",
+        "game_version": "Vanilla",
+        "colours": "White, Variable"
+    },
+    {
+        "name": "Black Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "6",
+        "behaviour": "Aggressive",
+        "native_region_count": "3",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Yellow Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "6",
+        "behaviour": "Aggressive",
+        "native_region_count": "15",
+        "game_version": "Vanilla",
+        "colours": "Black, Yellow, Orange"
+    },
+    {
+        "name": "Vulture",
+        "species": "Bird",
+        "hunter_food_pips": "14",
+        "behaviour": "Aggressive",
+        "native_region_count": "13",
+        "game_version": "Vanilla",
+        "colours": "Black, Variable"
+    },
+    {
+        "name": "Pole Plant",
+        "species": "Plant",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive, Neutral",
+        "native_region_count": "13",
+        "game_version": "Vanilla",
+        "colours": "Black, Red"
+    },
+    {
+        "name": "Monster Kelp",
+        "species": "Plant, Aquatic",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive",
+        "native_region_count": "13",
+        "game_version": "Vanilla",
+        "colours": "Black, Variable"
+    },
+    {
+        "name": "Red Leech",
+        "species": "Worm, Aquatic",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "Red"
+    },
+    {
+        "name": "Centipede",
+        "species": "Insect",
+        "hunter_food_pips": "7",
+        "behaviour": "Neutral, Aggressive",
+        "native_region_count": "10",
+        "game_version": "Vanilla",
+        "colours": "Orange, Black"
+    },
+    {
+        "name": "Centiwing",
+        "species": "Insect",
+        "hunter_food_pips": "3",
+        "behaviour": "Neutral, Aggressive",
+        "native_region_count": "8",
+        "game_version": "Vanilla",
+        "colours": "Green, Red"
+    },
+    {
+        "name": "Coalescipede",
+        "species": "Insect",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive",
+        "native_region_count": "3",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Wolf Spider",
+        "species": "Insect",
+        "hunter_food_pips": "3",
+        "behaviour": "Aggressive",
+        "native_region_count": "10",
+        "game_version": "Vanilla",
+        "colours": "Black, Yellow"
+    },
+    {
+        "name": "Dropwig",
+        "species": "Insect",
+        "hunter_food_pips": "3",
+        "behaviour": "Aggressive",
+        "native_region_count": "15",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Brother Long Legs",
+        "species": "Rot",
+        "hunter_food_pips": "5",
+        "behaviour": "Aggressive",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "Black, Green"
+    },
+    {
+        "name": "Leviathan",
+        "species": "Aquatic, Mechanical",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Miros Bird",
+        "species": "Bird, Mechanical",
+        "hunter_food_pips": "12",
+        "behaviour": "Aggressive",
+        "native_region_count": "5",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Daddy Long Legs",
+        "species": "Rot",
+        "hunter_food_pips": "10",
+        "behaviour": "Aggressive",
+        "native_region_count": "7",
+        "game_version": "Vanilla",
+        "colours": "Black, Blue"
+    },
+    {
+        "name": "Worm Grass",
+        "species": "Plant",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral, Aggressive",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "Black, Purple"
+    },
+    {
+        "name": "Overseer",
+        "species": "Mechanical",
+        "hunter_food_pips": "0",
+        "behaviour": "Passive",
+        "native_region_count": "20",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Squidcada",
+        "species": "Insect",
+        "hunter_food_pips": "3",
+        "behaviour": "Neutral",
+        "native_region_count": "8",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Noodlefly",
+        "species": "Insect",
+        "hunter_food_pips": "3",
+        "behaviour": "Neutral",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Garbage Worm",
+        "species": "Worm, Mechanical",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Snail",
+        "species": "Aquatic, Insect",
+        "hunter_food_pips": "1",
+        "behaviour": "Neutral",
+        "native_region_count": "8",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Scavenger",
+        "species": "Mammal",
+        "hunter_food_pips": "4",
+        "behaviour": "Passive, Neutral, Aggressive",
+        "native_region_count": "14",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Lantern Mouse",
+        "species": "Mammal",
+        "hunter_food_pips": "2",
+        "behaviour": "Fearful",
+        "native_region_count": "7",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Jetfish",
+        "species": "Aquatic",
+        "hunter_food_pips": "4",
+        "behaviour": "Neutral",
+        "native_region_count": "5",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Grappling Worm",
+        "species": "Worm",
+        "hunter_food_pips": "1",
+        "behaviour": "Passive",
+        "native_region_count": "3",
+        "game_version": "Vanilla",
+        "colours": "Blue"
+    },
+    {
+        "name": "Rain Deer",
+        "species": "Mammal, Insect",
+        "hunter_food_pips": "0",
+        "behaviour": "Passive",
+        "native_region_count": "1",
+        "game_version": "Vanilla",
+        "colours": "Brown"
+    },
+    {
+        "name": "Batfly",
+        "species": "Mammal, Insect",
+        "hunter_food_pips": "0.25",
+        "behaviour": "Fearful",
+        "native_region_count": "12",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Eggbug",
+        "species": "Insect",
+        "hunter_food_pips": "1",
+        "behaviour": "Passive",
+        "native_region_count": "10",
+        "game_version": "Vanilla",
+        "colours": "Black, Variable"
+    },
+    {
+        "name": "Vulture Grub",
+        "species": "Worm, Bird",
+        "hunter_food_pips": "1",
+        "behaviour": "Neutral",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "Yellow"
+    },
+    {
+        "name": "Hazer",
+        "species": "Cephalopod",
+        "hunter_food_pips": "1",
+        "behaviour": "Neutral",
+        "native_region_count": "6",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Jellyfish",
+        "species": "Aquatic",
+        "hunter_food_pips": "1",
+        "behaviour": "Neutral",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "White"
+    },
+    {
+        "name": "Looks to the Moon",
+        "species": "Mechanical, Iterator",
+        "hunter_food_pips": "0",
+        "behaviour": "Passive",
+        "native_region_count": "3",
+        "game_version": "Vanilla",
+        "colours": "Blue"
+    },
+    {
+        "name": "Neuron Fly",
+        "species": "Mechanical",
+        "hunter_food_pips": "0.25",
+        "behaviour": "Passive",
+        "native_region_count": "5",
+        "game_version": "Vanilla",
+        "colours": "Variable"
+    },
+    {
+        "name": "Five Pebbles",
+        "species": "Mechanical, Iterator",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "4",
+        "game_version": "Vanilla",
+        "colours": "Pink, Orange"
+    },
+    {
+        "name": "Echo",
+        "species": "Unknown",
+        "hunter_food_pips": "0",
+        "behaviour": "Passive",
+        "native_region_count": "10",
+        "game_version": "Vanilla",
+        "colours": "Black, Yellow"
+    },
+    {
+        "name": "Guardian",
+        "species": "Unknown",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "2",
+        "game_version": "Vanilla",
+        "colours": "Black"
+    },
+    {
+        "name": "Void Worm",
+        "species": "Worm, Unknown",
+        "hunter_food_pips": "0",
+        "behaviour": "Neutral",
+        "native_region_count": "2",
+        "game_version": "Vanilla",
+        "colours": "White, Yellow"
+    },
+    {
+        "name": "Red Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "9",
+        "behaviour": "Aggressive",
+        "native_region_count": "6",
+        "game_version": "Vanilla",
+        "colours": "Black, Red"
+    },
+    {
+        "name": "Cyan Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "6",
+        "behaviour": "Aggressive",
+        "native_region_count": "14",
+        "game_version": "Vanilla",
+        "colours": "Black, Cyan"
+    },
+    {
+        "name": "King Vulture",
+        "species": "Bird",
+        "hunter_food_pips": "16",
+        "behaviour": "Aggressive",
+        "native_region_count": "11",
+        "game_version": "Vanilla",
+        "colours": "Black, Variable"
+    },
+    {
+        "name": "Spitter Spider",
+        "species": "Insect",
+        "hunter_food_pips": "4",
+        "behaviour": "Aggressive",
+        "native_region_count": "11",
+        "game_version": "Vanilla",
+        "colours": "Black, Red"
+    },
+    {
+        "name": "Red Centipede",
+        "species": "Insect",
+        "hunter_food_pips": "9",
+        "behaviour": "Aggressive",
+        "native_region_count": "7",
+        "game_version": "Vanilla",
+        "colours": "Red, Black"
+    },
+    {
+        "name": "Caramel Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "10",
+        "behaviour": "Aggressive",
+        "native_region_count": "7",
+        "game_version": "Downpour",
+        "colours": "White, Yellow"
+    },
+    {
+        "name": "Eel Lizard",
+        "species": "Aquatic, Reptile",
+        "hunter_food_pips": "8",
+        "behaviour": "Aggressive",
+        "native_region_count": "5",
+        "game_version": "Downpour",
+        "colours": "Black, Green"
+    },
+    {
+        "name": "Strawberry Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "2",
+        "behaviour": "Aggressive",
+        "native_region_count": "5",
+        "game_version": "Downpour",
+        "colours": "White, Pink"
+    },
+    {
+        "name": "Jungle Leech",
+        "species": "Worm, Aquatic",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive",
+        "native_region_count": "4",
+        "game_version": "Downpour",
+        "colours": "Green"
+    },
+    {
+        "name": "Sea Leech",
+        "species": "Worm, Aquatic",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive",
+        "native_region_count": "5",
+        "game_version": "Vanilla",
+        "colours": "Blue"
+    },
+    {
+        "name": "Aquapede",
+        "species": "Insect, Aquatic",
+        "hunter_food_pips": "7",
+        "behaviour": "Aggressive",
+        "native_region_count": "4",
+        "game_version": "Downpour",
+        "colours": "Blue, Red"
+    },
+    {
+        "name": "Giant Jellyfish",
+        "species": "Aquatic",
+        "hunter_food_pips": "3",
+        "behaviour": "Aggressive",
+        "native_region_count": "2",
+        "game_version": "Downpour",
+        "colours": "Variable"
+    },
+    {
+        "name": "Stowaway",
+        "species": "Insect",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive",
+        "native_region_count": "6",
+        "game_version": "Downpour",
+        "colours": "Black"
+    },
+    {
+        "name": "Miros Vulture",
+        "species": "Bird, Mechanical",
+        "hunter_food_pips": "15",
+        "behaviour": "Aggressive",
+        "native_region_count": "7",
+        "game_version": "Downpour",
+        "colours": "Black, Red, Yellow"
+    },
+    {
+        "name": "Mother Long Legs",
+        "species": "Rot",
+        "hunter_food_pips": "10",
+        "behaviour": "Aggressive",
+        "native_region_count": "2",
+        "game_version": "Downpour",
+        "colours": "Black, Purple"
+    },
+    {
+        "name": "Inspector",
+        "species": "Mechanical",
+        "hunter_food_pips": "0",
+        "behaviour": "Passive, Aggressive",
+        "native_region_count": "3",
+        "game_version": "Downpour",
+        "colours": "Variable"
+    },
+    {
+        "name": "Elite Scavenger",
+        "species": "Mammal",
+        "hunter_food_pips": "4",
+        "behaviour": "Passive, Neutral, Aggressive",
+        "native_region_count": "4",
+        "game_version": "Downpour",
+        "colours": "Variable"
+    },
+    {
+        "name": "Yeek",
+        "species": "Aquatic, Reptile",
+        "hunter_food_pips": "2",
+        "behaviour": "Passive",
+        "native_region_count": "3",
+        "game_version": "Downpour",
+        "colours": "Variable"
+    },
+    {
+        "name": "Mother Spider",
+        "species": "Insect",
+        "hunter_food_pips": "6",
+        "behaviour": "Fearful, Aggressive",
+        "native_region_count": "4",
+        "game_version": "Downpour",
+        "colours": "Black, Green"
+    },
+    {
+        "name": "Firebug",
+        "species": "Insect",
+        "hunter_food_pips": "2",
+        "behaviour": "Neutral, Aggressive",
+        "native_region_count": "1",
+        "game_version": "Downpour",
+        "colours": "Variable"
+    },
+    {
+        "name": "Hunter Long Legs",
+        "species": "Rot, Mammal",
+        "hunter_food_pips": "5",
+        "behaviour": "Aggressive",
+        "native_region_count": "15",
+        "game_version": "Downpour",
+        "colours": "Red"
+    },
+    {
+        "name": "Slugpup",
+        "species": "Mammal",
+        "hunter_food_pips": "3",
+        "behaviour": "Fearful, Passive",
+        "native_region_count": "13",
+        "game_version": "Downpour",
+        "colours": "Variable"
+    },
+    {
+        "name": "Chieftain Scavenger",
+        "species": "Mammal",
+        "hunter_food_pips": "4",
+        "behaviour": "Aggressive",
+        "native_region_count": "1",
+        "game_version": "Downpour",
+        "colours": "Black, White"
+    },
+    {
+        "name": "Sliver of Straw",
+        "species": "Mechanical, Iterator",
+        "hunter_food_pips": "0",
+        "behaviour": "Aggressive",
+        "native_region_count": "0",
+        "game_version": "Downpour",
+        "colours": "White, Yellow"
+    },
+    {
+        "name": "Train Lizard",
+        "species": "Reptile",
+        "hunter_food_pips": "9",
+        "behaviour": "Aggressive",
+        "native_region_count": "1",
+        "game_version": "Downpour",
+        "colours": "Black, Purple"
+    }
+]
