@@ -14,7 +14,7 @@ function GuessDisplayRow({guess, target}) {
 }
 
 function GuessIconDisplayBox({ guessName }) {
-    const imageUrl = "images/rainworldle/icons/"+guessName.replaceAll(" ", "_")+".png";
+    const imageUrl = "/images/rainworldle/icons/"+guessName.replaceAll(" ", "_")+".png";
 
     return (
         <div className="GuessIconDisplayBox">
