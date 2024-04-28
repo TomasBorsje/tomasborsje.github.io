@@ -7,7 +7,7 @@ class PortfolioHeaderBar extends Component {
         return(
                 <div id="PortfolioHeaderBar">
                     <div id="PortfolioHeaderContent">
-                        <img id="PortfolioHeaderIcon" src="/images/portfolio/paper-plane.png" alt={"Pixel art paper plane"}/>
+                        <a href={"https://tomasborsje.github.io"}><img id="PortfolioHeaderIcon" src="/images/portfolio/paper-plane.png" alt={"Pixel art paper plane"}/></a>
                         <div>Tomas Borsje's Site</div>
                     </div>
                     <div className="background-images">
