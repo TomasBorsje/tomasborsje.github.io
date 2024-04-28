@@ -85,7 +85,7 @@ class RainWorldlePage extends Component {
   }
 
   loadWinStateFromGuesses(cookie, guesses, gameNum) {
-    if (cookie) {
+    if (cookie && this.state.targetGuess !== null) {
       const parsedCookie = JSON.parse(cookie);
       if (parsedCookie.gameNum === gameNum) {
         let alreadySolved = false;

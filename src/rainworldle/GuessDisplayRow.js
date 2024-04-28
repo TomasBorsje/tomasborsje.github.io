@@ -1,6 +1,6 @@
 function GuessDisplayRow({guess, target}) {
     let guessSquares = []
-    guessSquares.push(<GuessIconDisplayBox guessName={guess['name']}/>)
+    guessSquares.push(<GuessIconDisplayBox guessName={guess['name']} key={"icon"}/>)
 
     let propertyIndex = 0;
     for(const key in guess) {
