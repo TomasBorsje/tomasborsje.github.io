@@ -1,0 +1,14 @@
+[
+  {
+    "name": "tomasborsje.github.io",
+    "description": "This website was built with React, with additional support for multiple self-contained apps on sub-pages.",
+    "icon_url": "rainbow_slugcat.gif",
+    "link": "https://github.com/TomasBorsje/tomasborsje.github.io"
+  },
+  {
+    "name": "Rain Worldle",
+    "description": "Guess from a list of Rain World characters, updating daily! Inspired by New York Times's 'Wordle'.",
+    "icon_url": "rainbow_slugcat.gif",
+    "link": "https://github.com/TomasBorsje/tomasborsje.github.io/tree/main/src/rainworldle"
+  }
+]

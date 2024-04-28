@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { changeFavicon } from "../Utils.js"
+import PortfolioHeaderBar from "./PortfolioHeaderBar";
+import PortfolioBody from "./PortfolioBody";
 
 class PortfolioPage extends Component {
     componentDidMount() {
@@ -11,7 +13,10 @@ class PortfolioPage extends Component {
 
     render() {
         return (
-            <div>This is a WIP portfolio page. If you're seeing this, the router is working correctly.</div>
+            <div>
+                <PortfolioHeaderBar/>
+                <PortfolioBody/>
+            </div>
         );
     }
 }

@@ -1,0 +1,51 @@
+#PortfolioHeaderBar {
+    overflow: hidden;
+    position: relative;
+}
+
+#PortfolioHeaderContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    width: 100vw;
+    height: 12.5vh;
+
+    border-bottom: 2px solid gray;
+    font-size: 5vh;
+    font-family: "Chakra Petch", sans-serif;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+#PortfolioHeaderIcon {
+    padding-left: 2.5vw;
+    padding-right: 2vw;
+}
+
+.background-images {
+    z-index: -1;
+    position: absolute;
+    width: 200%;
+    height: auto; /* Set height to auto to maintain original aspect ratio */
+    top: -20vh; /* Offset for the pixel clouds to look better. */
+    left: 0;
+    animation: animateBackground 120s linear infinite; /* Apply animation to container */
+    animation-delay: -40s; /* Delay the start of the animation by 3 seconds */
+}
+
+.background-images img {
+    width: 50%; /* Each image takes up half of the container width */
+    height: 100%;
+    float: left;
+}
+
+@keyframes animateBackground {
+    0% {
+        transform: translateX(0); /* Move the images to the initial position (left) */
+    }
+    100% {
+        transform: translateX(-50%); /* Move the images to the end position (left) */
+    }
+}
