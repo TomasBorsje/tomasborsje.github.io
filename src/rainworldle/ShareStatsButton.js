@@ -31,7 +31,7 @@ function ShareStatsButton({guesses, target, gameNum, hidden}) {
         clipboardText += '\n'+guessLine;
     })
 
-    clipboardText += '\nhttps://rainworldle.net'
+    clipboardText += '\nhttps://tomasborsje.github.io/rainworldle'
 
     const handleCopyToClipboard = () => {
         clipboardCopy(clipboardText)
