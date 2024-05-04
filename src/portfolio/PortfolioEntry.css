@@ -16,6 +16,7 @@
 #PortfolioEntryLink {
     display: inline-block;
     align-self: flex-end;
+    width: fit-content;
 }
 
 #PortfolioEntryIcon {
