@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { changeFavicon } from "../Utils.js"
 import PortfolioHeaderBar from "./PortfolioHeaderBar";
 import PortfolioBody from "./PortfolioBody";
+import "./PortfolioPage.css"
 
 class PortfolioPage extends Component {
     componentDidMount() {
@@ -13,7 +14,7 @@ class PortfolioPage extends Component {
 
     render() {
         return (
-            <div>
+            <div id="PortfolioPage">
                 <PortfolioHeaderBar/>
                 <PortfolioBody/>
             </div>

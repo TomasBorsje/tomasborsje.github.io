@@ -31,7 +31,7 @@
     height: auto; /* Set height to auto to maintain original aspect ratio */
     top: -20vh; /* Offset for the pixel clouds to look better. */
     left: 0;
-    animation: animateBackground 120s linear infinite; /* Apply animation to container */
+    animation: animateBackground 300s linear infinite; /* Apply animation to container */
     animation-delay: -40s; /* Delay the start of the animation by 3 seconds */
 }
 

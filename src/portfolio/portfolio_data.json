@@ -2,8 +2,14 @@
   {
     "name": "tomasborsje.github.io",
     "description": "This website was built with React with additional support for multiple self-contained apps on sub-pages.",
-    "icon_url": "rainbow_slugcat.gif",
+    "icon_url": "portfolio-icon.png",
     "link": "https://github.com/TomasBorsje/tomasborsje.github.io"
+  },
+  {
+    "name": "Duskfall",
+    "description": "A Minecraft MMORPG plugin, built on Spigot. Includes support for data-driven items, mobs, recipes, and an MMORPG code layer above Spigot's.",
+    "icon_url": "duskfall-icon.png",
+    "link": "https://github.com/TomasBorsje/Duskfall"
   },
   {
     "name": "Rain Worldle",

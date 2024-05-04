@@ -1,6 +1,7 @@
 import { Component } from "react";
 import portfolio_data from "./portfolio_data.json";
 import PortfolioEntry from "./PortfolioEntry";
+import "./PortfolioBody.css";
 
 /**
  * Body of the portfolio page. Renders a list of PortfolioEntry objects from portfolio_data.json.
@@ -15,7 +16,7 @@ class PortfolioBody extends Component {
         });
 
         return(
-            <div>
+            <div id="PortfolioBody">
                 {portfolioEntries}
             </div>
         )
