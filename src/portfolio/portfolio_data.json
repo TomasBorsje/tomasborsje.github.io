@@ -16,5 +16,29 @@
     "description": "Guess from a list of Rain World characters, changing daily! Inspired by New York Times's 'Wordle'.",
     "icon_url": "rainbow_slugcat.gif",
     "link": "https://github.com/TomasBorsje/tomasborsje.github.io/tree/main/src/rainworldle"
+  },
+  {
+    "name": "Aetherium",
+    "description": "Terraria mod for tModLoader, written in C#. Adds a few unique items + a boss fight.",
+    "icon_url": "aetherium.png",
+    "link": "https://github.com/TomasBorsje/Aetherium"
+  },
+  {
+    "name": "VoxelGame",
+    "description": "A Minecraft clone created in Unity with C#. Has support for procedural world generation, crafting, saving + loading, and more.",
+    "icon_url": "voxelgame.png",
+    "link": "https://github.com/TomasBorsje/VoxelGame"
+  },
+  {
+    "name": "LeagueBot",
+    "description": "A computer-vision powered bot that uses also uses the League of Legends API to play the game.",
+    "icon_url": "leaguebot.png",
+    "link": "https://github.com/TomasBorsje/LeagueBot"
+  },
+  {
+    "name": "TetrisGym",
+    "description": "An OpenAI 'gym' set up for machine learning agents to learn the popular game Tetris.",
+    "icon_url": "tetris-gym.png",
+    "link": "https://github.com/TomasBorsje/TetrisGym"
   }
 ]
