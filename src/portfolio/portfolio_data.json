@@ -13,7 +13,7 @@
   },
   {
     "name": "Rain Worldle",
-    "description": "Guess from a list of Rain World characters, changing daily! Inspired by New York Times's 'Wordle'.",
+    "description": "Guess from a list of Rain World characters, changing daily! Inspired by New York Times's 'Wordle', and hosted on /rainworldle.",
     "icon_url": "rainbow_slugcat.gif",
     "link": "https://github.com/TomasBorsje/tomasborsje.github.io/tree/main/src/rainworldle"
   },
@@ -31,7 +31,7 @@
   },
   {
     "name": "LeagueBot",
-    "description": "A computer-vision powered bot that uses also uses the League of Legends API to play the game.",
+    "description": "A computer-vision powered bot that also uses the League of Legends API to play the game. Written in C#.",
     "icon_url": "leaguebot.png",
     "link": "https://github.com/TomasBorsje/LeagueBot"
   },
