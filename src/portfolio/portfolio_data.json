@@ -37,7 +37,7 @@
   },
   {
     "name": "TetrisGym",
-    "description": "An OpenAI 'gym' set up for machine learning agents to learn the popular game Tetris.",
+    "description": "An ml-agents 'gym' set up for machine learning agents to learn the popular game Tetris.",
     "icon_url": "tetris-gym.png",
     "link": "https://github.com/TomasBorsje/TetrisGym"
   }
