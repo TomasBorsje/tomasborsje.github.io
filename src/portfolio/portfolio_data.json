@@ -14,7 +14,7 @@
   {
     "name": "Rain Worldle",
     "description": "Guess from a list of Rain World characters, changing daily! Inspired by New York Times's 'Wordle', and hosted on /rainworldle.",
-    "icon_url": "rainbow_slugcat.gif",
+    "icon_url": "rainworldle.png",
     "link": "https://github.com/TomasBorsje/tomasborsje.github.io/tree/main/src/rainworldle"
   },
   {
