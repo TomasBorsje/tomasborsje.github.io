@@ -7,13 +7,13 @@
   },
   {
     "name": "Duskfall",
-    "description": "A Minecraft MMORPG plugin, built on Spigot. Includes support for data-driven items, mobs, recipes, and an MMORPG code layer above Spigot's.",
+    "description": "A Minecraft MMORPG plugin, built on Spigot. Includes support for data-driven items, mobs, recipes, and an MMORPG code layer above Spigot's. Built with extensibility in mind.",
     "icon_url": "duskfall-icon.png",
     "link": "https://github.com/TomasBorsje/Duskfall"
   },
   {
     "name": "Duskfall-Legacy",
-    "description": "The previous iteration of Duskfall. Has support for quests, a boss-bar compass, crafting, recipe unlocking, fake player NPCs, enemies, looting, custom mob AI, and more!",
+    "description": "The previous iteration of Duskfall. Has quests, a boss-bar compass, crafting, recipe unlocking, fake player NPCs, enemies, looting, projectiles, a MongoDB database, custom mob AI, and more!",
     "icon_url": "duskfall-legacy.png",
     "link": "https://github.com/TomasBorsje/FantasyMMO"
   },
