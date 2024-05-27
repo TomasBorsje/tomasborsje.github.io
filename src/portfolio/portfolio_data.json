@@ -12,6 +12,18 @@
     "link": "https://github.com/TomasBorsje/Duskfall"
   },
   {
+    "name": "Duskfall-Legacy",
+    "description": "The previous iteration of Duskfall. Has support for quests, a boss-bar compass, crafting, recipe unlocking, fake player NPCs, enemies, looting, custom mob AI, and more!",
+    "icon_url": "duskfall-legacy.png",
+    "link": "https://github.com/TomasBorsje/FantasyMMO"
+  },
+  {
+    "name": "WingTech",
+    "description": "A Minecraft Forge mod that adds a json-based customisable tea system, a few machines, and more.",
+    "icon_url": "wingtech.png",
+    "link": "https://github.com/TomasBorsje/WingTech"
+  },
+  {
     "name": "Rain Worldle",
     "description": "Guess from a list of Rain World characters, changing daily! Inspired by New York Times's 'Wordle', and hosted on /rainworldle.",
     "icon_url": "rainworldle.png",
