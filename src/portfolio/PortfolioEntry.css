@@ -13,6 +13,10 @@
     display: grid;
 }
 
+#PortfolioEntryDescription {
+    margin-bottom: 1vh;
+}
+
 #PortfolioEntryLink {
     display: inline-block;
     align-self: flex-end;
@@ -26,10 +30,21 @@
     outline: gray solid 2px;
 }
 
+#PortfolioTitleContainer {
+    display: flex;
+}
+
 #PortfolioEntryTitle {
     align-self: flex-start;
     font-size: 3vh;
     font-family: "Chakra Petch", sans-serif;
     color: #1c1c1c;
+}
 
+#PortfolioEntryTitleTag {
+    margin-left: 0.45rem;
+    align-self: flex-start;
+    font-size: 2vh;
+    font-family: "Chakra Petch", sans-serif;
+    color: #989898;
 }

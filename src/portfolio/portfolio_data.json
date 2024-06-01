@@ -3,54 +3,71 @@
     "name": "tomasborsje.github.io",
     "description": "This website was built with React with additional support for multiple self-contained apps on sub-pages.",
     "icon_url": "portfolio-icon.png",
-    "link": "https://github.com/TomasBorsje/tomasborsje.github.io"
+    "link": "https://github.com/TomasBorsje/tomasborsje.github.io",
+    "tag": "[React]"
   },
   {
     "name": "Duskfall",
-    "description": "A Minecraft MMORPG plugin, built on Spigot. Includes support for data-driven items, mobs, recipes, and an MMORPG code layer above Spigot's. Built with extensibility in mind.",
+    "description": "The first iteration of Duskfall, my Minecraft + Spigot MMORPG. Has quests, a boss-bar compass, crafting, recipe unlocking, fake player NPCs, projectiles, a MongoDB database, custom mob AI, and more! Check out the showcase below.",
     "icon_url": "duskfall-icon.png",
-    "link": "https://github.com/TomasBorsje/Duskfall"
+    "link": "https://github.com/TomasBorsje/FantasyMMO",
+    "video": "https://www.youtube.com/watch?v=ScNhC0RFkuM",
+    "tag": "[Java] [Spigot]"
   },
   {
-    "name": "Duskfall-Legacy",
-    "description": "The previous iteration of Duskfall. Has quests, a boss-bar compass, crafting, recipe unlocking, fake player NPCs, enemies, looting, projectiles, a MongoDB database, custom mob AI, and more!",
+    "name": "Duskfall Rewritten",
+    "description": "An improved rewrite of Duskfall with extensibility in mind. Includes support for data-driven items, mobs, recipes, and an MMORPG code layer above Spigot's.",
     "icon_url": "duskfall-legacy.png",
-    "link": "https://github.com/TomasBorsje/FantasyMMO"
+    "link": "https://github.com/TomasBorsje/Duskfall",
+    "tag": "[Java] [Spigot]"
+  },
+  {
+    "name": "SlugCraft",
+    "description": "A Forge mod for Minecraft 1.20.1 that adds Rain World based items, mechanics, and a fully fledged battle royale system.",
+    "icon_url": "slugcraft.png",
+    "link": "https://github.com/TomasBorsje/SlugCraft",
+    "tag": "[Java] [Forge]"
   },
   {
     "name": "WingTech",
     "description": "A Minecraft Forge mod that adds a json-based customisable tea system, a few machines, and more.",
     "icon_url": "wingtech.png",
-    "link": "https://github.com/TomasBorsje/WingTech"
+    "link": "https://github.com/TomasBorsje/WingTech",
+    "tag": "[Java] [Forge]"
   },
   {
     "name": "Rain Worldle",
     "description": "Guess from a list of Rain World characters, changing daily! Inspired by New York Times's 'Wordle', and hosted on /rainworldle.",
     "icon_url": "rainworldle.png",
-    "link": "https://github.com/TomasBorsje/tomasborsje.github.io/tree/main/src/rainworldle"
+    "link": "https://github.com/TomasBorsje/tomasborsje.github.io/tree/main/src/rainworldle",
+    "tag": "[React]"
   },
   {
     "name": "Aetherium",
     "description": "Terraria mod for tModLoader, written in C#. Adds a few unique items + a boss fight.",
     "icon_url": "aetherium.png",
-    "link": "https://github.com/TomasBorsje/Aetherium"
+    "link": "https://github.com/TomasBorsje/Aetherium",
+    "tag": "[C#]"
   },
   {
     "name": "VoxelGame",
     "description": "A Minecraft clone created in Unity with C#. Has support for procedural world generation, crafting, saving + loading, and more.",
     "icon_url": "voxelgame.png",
-    "link": "https://github.com/TomasBorsje/VoxelGame"
+    "link": "https://github.com/TomasBorsje/VoxelGame",
+    "tag": "[C#] [Unity]"
   },
   {
     "name": "LeagueBot",
     "description": "A computer-vision powered bot that also uses the League of Legends API to play the game. Written in C#.",
     "icon_url": "leaguebot.png",
-    "link": "https://github.com/TomasBorsje/LeagueBot"
+    "link": "https://github.com/TomasBorsje/LeagueBot",
+    "tag": "[C#]"
   },
   {
     "name": "TetrisGym",
     "description": "An ml-agents 'gym' set up for machine learning agents to learn the popular game Tetris.",
     "icon_url": "tetris-gym.png",
-    "link": "https://github.com/TomasBorsje/TetrisGym"
+    "link": "https://github.com/TomasBorsje/TetrisGym",
+    "tag": "[C#] [Unity]"
   }
 ]
