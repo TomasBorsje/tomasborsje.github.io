@@ -10,7 +10,6 @@ class PortfolioEntry extends Component {
                         <div id="PortfolioEntryTitle">{this.props.entry.name}</div>
                         <div id="PortfolioEntryTitleTag">{this.props.entry.tag}</div>
                     </div>
-
                     <div id="PortfolioEntryDescription">{this.props.entry.description}</div>
                     <a id="PortfolioEntryLink" href={this.props.entry.link}>View Repository</a>
                     {this.props.entry.video && (
