@@ -8,29 +8,36 @@
   },
   {
     "name": "Duskfall",
-    "description": "The first iteration of Duskfall, my Minecraft + Spigot MMORPG. Has quests, a boss-bar compass, crafting, recipe unlocking, fake player NPCs, projectiles, a MongoDB database, custom mob AI, and more! Check out the showcase below.",
+    "description": "An MMORPG server written entirely from scratch in Java using the Minestom API, integrated with a MongoDB database for data storage. Items, enemies, and spawn locations are fully data driven.",
     "icon_url": "duskfall-icon.png",
+    "link": "https://github.com/TomasBorsje/DuskfallServer",
+    "tag": "[Java]"
+  },
+  {
+    "name": "Duskfall-Legacy",
+    "description": "The first iteration of my Minecraft + Spigot MMORPG. Has quests, a map compass, crafting, recipe unlocking, fake player NPCs, projectiles, a MongoDB database, custom mob AI, and more! Check out the showcase below.",
+    "icon_url": "duskfall-legacy.png",
     "link": "https://github.com/TomasBorsje/FantasyMMO",
     "video": "https://www.youtube.com/watch?v=ScNhC0RFkuM",
     "tag": "[Java] [Spigot]"
   },
   {
-    "name": "Duskfall Rewritten",
-    "description": "An improved rewrite of Duskfall with extensibility in mind. Includes support for data-driven items, mobs, recipes, and an MMORPG code layer above Spigot's.",
-    "icon_url": "duskfall-legacy.png",
-    "link": "https://github.com/TomasBorsje/Duskfall",
-    "tag": "[Java] [Spigot]"
+    "name": "OpenModularTurrets Reloaded",
+    "description": "A rewrite of the popular OpenModularTurrets mod for Minecraft 1.21.",
+    "icon_url": "omt-reloaded.png",
+    "link": "https://github.com/TomasBorsje/OMT-Reloaded",
+    "tag": "[Java] [NeoForge]"
   },
   {
-    "name": "ZombieMMO",
-    "description": "A WIP zombie apocalypse MMO with guns, NPCs, per-player lootable objects, secrets, and more. Cancelled due to changes in Microsoft's EULA forbidding guns in game.",
-    "icon_url": "zombiemmo.png",
-    "link": "https://github.com/TomasBorsje/ZombiesMMO",
-    "tag": "[Java] [Spigot]"
+    "name": "Rain Worldle",
+    "description": "Guess from a list of Rain World characters, changing daily! Inspired by New York Times's 'Wordle', and hosted on /rainworldle.",
+    "icon_url": "rainworldle.png",
+    "link": "https://github.com/TomasBorsje/tomasborsje.github.io/tree/main/src/rainworldle",
+    "tag": "[React]"
   },
   {
     "name": "SlugCraft",
-    "description": "A Forge mod for Minecraft 1.20.1 that adds Rain World based items, mechanics, and a fully fledged battle royale system.",
+    "description": "A Forge mod for Minecraft 1.20.1 that adds Rain World-based items, mechanics, and a fully fledged 'battle-royale' system.",
     "icon_url": "slugcraft.png",
     "link": "https://github.com/TomasBorsje/SlugCraft",
     "tag": "[Java] [Forge]"
@@ -41,13 +48,6 @@
     "icon_url": "wingtech.png",
     "link": "https://github.com/TomasBorsje/WingTech",
     "tag": "[Java] [Forge]"
-  },
-  {
-    "name": "Rain Worldle",
-    "description": "Guess from a list of Rain World characters, changing daily! Inspired by New York Times's 'Wordle', and hosted on /rainworldle.",
-    "icon_url": "rainworldle.png",
-    "link": "https://github.com/TomasBorsje/tomasborsje.github.io/tree/main/src/rainworldle",
-    "tag": "[React]"
   },
   {
     "name": "Aetherium",
